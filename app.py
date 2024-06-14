@@ -7,9 +7,9 @@ import openai
 
 key=st.text_input("enter your api_key")
 if key:
-    # os.environ["OPENAI_API_KEY"]=""
+    
     def response(message,word):
-        # openai.api_key = st.secrets[key]
+   
         client = OpenAI(api_key=key)
         prompt= f""" 
             You're a helpful assistant, I've provided you the options below with descriptions below. 
